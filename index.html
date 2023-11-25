@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Section -->
+    <section><br><br><br>
+        <i class="bi bi-book-fill"></i>
+        <span class="mainspan">My<span>Book</span>List</span>
+
+        <!-- Form -->
+        <div class="form">
+            <p>Title</p>
+            <input type="text" placeholder="What is the title?" id="title">
+            <p>Author</p>
+            <input type="text" placeholder="Who is the author?" id="author">
+            <p>Color</p>
+            <input type="text" placeholder="What is the color? (optional)" id="color">
+            <br><br>
+            <input type="radio" name="type" class="input-radio" id="radio1"><span class="radio-span">Phsycology</span>
+            <input type="radio" name="type" class="input-radio" id="radio2"><span class="radio-span">Drama</span>
+            <input type="radio" name="type" class="input-radio" id="radio3"><span class="radio-span">Motivation</span>
+            <br>
+            <button id="btn">Add Book</button>
+        </div>
+
+        <!-- Table -->
+        <br><br><br><br><br>
+        <table id="tableMain">
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Type</th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
