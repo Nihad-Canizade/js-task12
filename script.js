@@ -28,10 +28,11 @@ btn.addEventListener('click', () => {
         x = "Motivation";
     }
 
-    if (titleValue == "" || authorValue == "" || radio1.checked === false && radio2.checked === false && radio3.checked === false ) {
+    if (titleValue == "" || authorValue == "" || colorValue == "" || radio1.checked === false && radio2.checked === false && radio3.checked === false ) {
         alert("Please fill in all fields");
     } else {
         let newtr = document.createElement("tr");
+        newtr.style.backgroundColor = color.value;
         let newtd1 = document.createElement("td");
         newtd1.innerHTML = title.value;
         let newtd2 = document.createElement("td");
