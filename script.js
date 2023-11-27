@@ -36,8 +36,8 @@ btn.addEventListener('click', () => {
         x = "Motivation";
     }
 
-    if (titleValue == "" || authorValue == "") {
-        let y = "Example";
+    if (titleValue == "" || authorValue == "" || radio1.checked === false && radio2.checked === false && radio3.checked === false ) {
+        let y = "Fill it up";
     } else {
         let newtr = document.createElement("tr");
         let newtd1 = document.createElement("td");
