@@ -19,14 +19,6 @@ btn.addEventListener('click', () => {
     let authorValue = author.value.trim();
     let colorValue = color.value.trim();
 
-    if (titleValue == "" || authorValue == "") {
-        alert("Please fill in all the fields");
-    }
-
-    if (radio1.checked == "" && radio2.checked == "" && radio3.checked == "") {
-        alert("Please fill in all the circles");
-    }
-
     let x;
     if (radio1.checked == true) {
         x = "Phsycology";
@@ -37,7 +29,7 @@ btn.addEventListener('click', () => {
     }
 
     if (titleValue == "" || authorValue == "" || radio1.checked === false && radio2.checked === false && radio3.checked === false ) {
-        let y = "Fill it up";
+        alert("Please fill in all fields");
     } else {
         let newtr = document.createElement("tr");
         let newtd1 = document.createElement("td");
